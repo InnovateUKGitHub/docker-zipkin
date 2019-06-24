@@ -11,6 +11,8 @@ ADD configure.sh /mysql/configure
 RUN /mysql/configure
 
 ADD run.sh /mysql/run.sh
+
+USER mysql
 CMD /mysql/run.sh
 
 EXPOSE 3306
